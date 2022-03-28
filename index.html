@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sports Academy Website</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo">Dream Sports Academy</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">ContactUs</a>
+        <a href="#about">AboutUs</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Type here to search">
+        <label for="search-bar" class="fas fa-search" ></label>
+    </form>
+    
+</header>
+
+<!-- Home Section Begins-->
+
+
+<section class="home" id="home">
+    <div class="content">
+        <h2>What is there in the world without sports</h2>
+        <p>All Sports at your feet</p>
+    </div>
+
+    <div class="controls">
+        <span class="video-btn active" data-src="images/football.mp4"></span>
+        <span class="video-btn" data-src="images/tennis.mp4"></span>
+        <span class="video-btn" data-src="images/volleyball.mp4"></span>
+        <span class="video-btn" data-src="images/badminton.mp4"></span>
+        <span class="video-btn" data-src="images/basketball.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/football.mp4" id="video-slider" loop autoplay ></video>
+    </div>
+</section>
+
+
+<!-- Home Section Ends-->
+
+<!-- Services Section Starts-->
+<section class="services" id="services">
+    <h3 class="heading">SERVICES</h3>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-futbol"></i>
+            <h2>Football</h2>
+            <p></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-racquet"></i>
+            <h2>Tennis</h2>
+            <p></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-volleyball-ball"></i>
+            <h2>Volleyball</h2>
+            <p></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-shuttlecock"></i>
+            <h2>Badminton</h2>
+            <p></p>
+        </div>
+        <div class="box">
+            <i class="fa fas fa-basketball-hoop"></i>
+            <h2>BasketBall</h2>
+            <p></p>
+        </div>
+        
+    </div>
+</section>
+<!-- Services Section Ends-->
+
+
+<!-- Gallery Section Starts-->
+
+<section class="gallery" id="gallery">
+    <h3 class="heading">GALLERY</h3>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/badminton-1.jpg">
+        </div>  
+
+        <div class="box">
+            <img src="images/badminton-2.jpg">
+        </div>
+
+        <div class="box" >
+            <img src="images/basketball-1.jpg">
+        </div>
+
+        <div class="box" >
+            <img src="images/basketball-2.jpeg">
+        </div>
+
+        <div class="box" >
+            <img src="images/tennis-1.jpg">
+        </div>
+
+        <div class="box" >
+            <img src="images/tennis-2.jpg">
+        </div>
+
+        <div class="box" >
+            <img src="images/football-1.jpg">
+        </div>
+
+        <div class="box" >
+            <img src="images/football-2.jpg">
+
+    </div>
+    
+    <!-- <div >
+        <button id="moreBtn" class ="btn"  onclick="seeMoreLess()">See More</button> 
+    </div> -->
+
+</section>
+
+<!-- Gallery Section Ends-->
+
+
+<!-- Contact Section Starts-->
+
+<section class="contact" id="contact">
+    <h3 class="heading">Contact Us</h3>
+
+    <div class="row">
+        <div class="image">
+            <img src="images/contact.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+                <input type="tel" placeholder="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+            <input type="submit" value="send" class="btn">
+        </form>
+    </div>
+</section>
+
+<!-- Contact Section Ends-->
+
+<!-- AboutUs Section Starts-->
+
+<section class="about" id="about">
+    <h3 class="heading">About Us</h3>
+    <div class="box-container">
+        <div class="box">
+            <p>The aim of this organisation is to nourish the future sporting icons of INDIA.</p>
+            <p>LOOK UP, GET UP AND NEVER GIVE UP</p>
+        </div>
+    </div>
+</section>
+
+<!-- AboutUs Section Ends-->
+
+
+<!-- Footer Section Starts-->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">ContactUs</a>
+            <a href="#about">AboutUs</a>
+        </div>
+
+        <div class="box">
+            <h3>Social Media</h3>
+            <a href="#"><i class="fab fa-facebook"></i>  Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i>  Instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i>  Twitter</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section Ends-->
+
+
+
+<script src="javaScript/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>    
+</html>
