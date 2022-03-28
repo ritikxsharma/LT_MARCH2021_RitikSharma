@@ -25,14 +25,49 @@ menubar.addEventListener('click', () => {
     searchBar.classList.remove('active');
 });
 
+//simulating a click on nextSibling on videoEnd
+var currentVideo=document.querySelector('#video-slider')
+currentVideo.addEventListener('ended',()=>{
+    
+    if(document.querySelector('.controls .active').nextElementSibling!=null){
+        document.querySelector('.controls .active').nextElementSibling.click()
+    }
+    else{
+        document.querySelector(".controls .video-btn").click()
+    }
+})
+
+//handling videoCarousel through .controls
 videoBtn.forEach(btn =>{
     btn.addEventListener('click' , () => {
         document.querySelector('.controls .active').classList.remove('active');
         btn.classList.add('active');
         var src = btn.getAttribute('data-src');
-        document.querySelector('#video-slider').src = src;
+        currentVideo.src = src;
     });
 });
+
+// --- SHOW MORE IMPLEMENTATION
+var galleryImgs=document.querySelectorAll('.gallery .box-container .box')
+var inactiveImgs=Array.from(galleryImgs).slice(-6) 
+console.log(inactiveImgs)
+
+galleryImgs[1].addEventListener('click',()=>{
+    inactiveImgs.forEach(img=>{
+        img.style.display="inline-block";
+    })
+    galleryImgs[1].firstElementChild.classList.add('disable')
+})
+
+// --- SHOW LESS IMPLEMENTATION
+galleryImgs[galleryImgs.length-1].addEventListener('click',()=>{
+    inactiveImgs.forEach(img=>{
+        img.style.display="none"
+    })
+    galleryImgs[1].firstElementChild.classList.remove('disable')
+})
+
+
 
 // function seeMoreLess() {
 

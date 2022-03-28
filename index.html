@@ -54,7 +54,8 @@
     </div>
 
     <div class="video-container">
-        <video src="images/football.mp4" id="video-slider" loop autoplay ></video>
+        <!-- chrome doesn't allow non-muted videos to autoplay -->
+        <video src="images/football.mp4" id="video-slider" playsinline autoplay muted></video>
     </div>
 </section>
 
@@ -108,6 +109,7 @@
         </div>  
 
         <div class="box">
+            <div class="overlayer">SHOW MORE</div>
             <img src="images/badminton-2.jpg">
         </div>
 
@@ -132,6 +134,7 @@
         </div>
 
         <div class="box" >
+            <div class="overlayer">SHOW LESS</div>
             <img src="images/football-2.jpg">
 
     </div>
